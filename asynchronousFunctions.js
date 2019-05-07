@@ -10,11 +10,14 @@ async function fetchGitHubUser(handle) {
     return body;
 }
 
-fetchGitHubUser("")
-    .then(user => {
+async function showGitHubUser(handle) {
+    try {
+        const user = await fetchGitHubUser(handle);
         console.log(user.name);
         console.log(user.location);
-    })
-    .catch(error => {
-        console.log(`Error ${error.message}`)
-    })
+    } catch(error) {
+        console.log(`Error: ${error.message}`)
+    }
+}
+
+showGitHubUser("CLTPayne")
