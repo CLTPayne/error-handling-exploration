@@ -13,3 +13,18 @@ try {
     console.log(`Error message: ${error.message}`);
     console.log(`Error constructor: ${error.constructor}`);
 }
+
+try {
+    const demo = {
+        demoString: "demo time"
+    }
+    console.log(demo.demoString());
+} catch (error) {
+    console.log(error instanceof TypeError); // true 
+    console.log(error.name); // TypeError
+    console.log(error.message); // demo.demoString is not a function
+}
+
+// TypeError - variable or param is not the valid type. Eg. you can't execute a string.
+// SyntaxError - your code doesn't match the expectations of the lanugage and is broken
+// ReferenceError - you're trying to reference a variable you haven't declared yet
