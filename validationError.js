@@ -64,3 +64,5 @@ try {
         throw error // if it's an unknown error, throw it
     }
 }
+
+module.exports = ValidationError;
