@@ -31,5 +31,4 @@ try {
 // The name property would be a generic 'Error' but this is overridden 
 // Hence the more useful 'API Response Error'.
 // The stacktrace is on top class errors that use the V8 engine 
-// currently (Chrome and node), soon to be edge too. Hence check and 
-//  don't assume
+// This is in Chrome and node, soon Edge too. So check and don't assume.
