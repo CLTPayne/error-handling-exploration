@@ -28,3 +28,12 @@ try {
 // TypeError - variable or param is not the valid type. Eg. you can't execute a string.
 // SyntaxError - your code doesn't match the expectations of the lanugage and is broken
 // ReferenceError - you're trying to reference a variable you haven't declared yet
+
+// This is what the Error class looks like in "pseudocode"
+// class Error {
+//     constructor(message) {
+//         this.message = message;
+//         this.name = "Error"; // (different names for different built-in error classes)
+//         this.stack = <nested calls>; // non-standard, but most environments support it
+//     }
+// }
