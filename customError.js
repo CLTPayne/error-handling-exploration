@@ -30,4 +30,6 @@ try {
 // And these do not exist on default JavaScript error types
 // The name property would be a generic 'Error' but this is overridden 
 // Hence the more useful 'API Response Error'.
-
+// The stacktrace is on top class errors that use the V8 engine 
+// currently (Chrome and node), soon to be edge too. Hence check and 
+//  don't assume
